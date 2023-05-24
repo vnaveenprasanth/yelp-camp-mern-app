@@ -49,7 +49,7 @@ const store = MongoStore.create({
     mongoUrl: dbUrl,
     touchAfter: 24 * 60 * 60,
     crypto: {
-        secret: 'yelpcampsecretisveryeasytoguess'
+        secret: process.env.SECRET
     }
 });
 
